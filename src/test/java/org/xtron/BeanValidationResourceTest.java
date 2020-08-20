@@ -20,8 +20,7 @@ public class BeanValidationResourceTest {
         given()
           .when().get("/test-jpa-validation")
           .then()
-             .statusCode(500)
-             .body(containsString("javax.validation.ConstraintViolationException"));
+             .statusCode(500);
     }
 
 }
